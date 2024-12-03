@@ -1,0 +1,22 @@
+CLASS zcl_27_log_c311 DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+
+    METHODS: return_category RETURNING VALUE(rv_category) TYPE string.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+    DATA: category TYPE string VALUE 'A5'.
+ENDCLASS.
+
+
+
+CLASS ZCL_27_LOG_C311 IMPLEMENTATION.
+
+
+  METHOD return_category.
+   rv_category = me->category.
+  ENDMETHOD.
+ENDCLASS.

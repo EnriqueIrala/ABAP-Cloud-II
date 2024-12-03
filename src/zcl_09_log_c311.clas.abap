@@ -1,0 +1,23 @@
+CLASS zcl_09_log_c311 DEFINITION
+  PUBLIC
+*  FINAL
+  CREATE private .
+
+  PUBLIC SECTION.
+
+    METHODS:
+      get_attr RETURNING VALUE(rv_attr) TYPE string.
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZCL_09_LOG_C311 IMPLEMENTATION.
+
+
+  METHOD get_attr.
+    rv_attr = 'Attribute'.
+  ENDMETHOD.
+ENDCLASS.

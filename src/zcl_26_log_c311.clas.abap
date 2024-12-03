@@ -1,0 +1,24 @@
+CLASS zcl_26_log_c311 DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+
+    DATA: keyboard TYPE REF TO zcl_25_log_c311.
+
+    METHODS constructor IMPORTING io_keyboard TYPE REF TO zcl_25_log_c311.
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZCL_26_LOG_C311 IMPLEMENTATION.
+
+
+  METHOD constructor.
+    me->keyboard = io_keyboard.
+  ENDMETHOD.
+ENDCLASS.
